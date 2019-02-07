@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystals Collector</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <script src="assets/javascript/game.js"></script>
 </head>
 
 <body>
-    <h1>CrystalsCollector!</h1>
+    <h1 class="text-center">CrystalsCollector!</h1>
 
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col text-center">
                 <p>You will be given a random number at the start of the game.</p>
                 <p>There are four crystals below. By clicking on a crystal you will add a specific amount of point to
                     your
@@ -32,20 +33,27 @@
 
         <div class="row">
             <div class="col">
-                <element id="randomNumber"></element>
+                <p>Target score: <element id="randomNumber"></element></p>
             </div>
             <div class="col">
-                <p>Wins: <element id="numWins">0</element></p>
+                <p>Wins: <element id="numWins">0</element>
+                </p>
                 <br>
-                <p>Losses: <element id="numLosses">0</element></p>
+                <p>Losses: <element id="numLosses">0</element>
+                </p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div class="col">
+                <img id="crystal1" src="assets/images/abstract1.jpg" width="120" height="100">
+
+                <img id="crystal2" src="assets/images/abstract2.jpg" width="120" height="100">
+
+                <img id="crystal3" src="assets/images/abstract3.jpg" width="120" height="100">
+
+                <img id="crystal4" src="assets/images/business4.jpg" width="120" height="100">
+            </div>
         </div>
 
         <div class="row">
@@ -55,11 +63,11 @@
         </div>
 
         <div class="row">
-                <div class="col">
-                    <element id="currentScore">0</element>
-                </div>
+            <div class="col">
+                <element id="currentScore">0</element>
             </div>
-    
+        </div>
+
 
     </div>
 </body>
